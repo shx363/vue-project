@@ -1,0 +1,188 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>收益计算器</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<link href="css/home.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" type="text/css" href="css/xinfugai.css">
+<link href="css/css.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<script type="text/javascript" src="js/jquery.js"></script>
+</head>
+
+<body>
+<!--top-->
+<div class="top">
+	<div class="box">
+        <a href="index.html" class="return"><img src="images/return.png"></a>
+        收益计算    
+    </div>
+</div>
+
+<!--two选择-->
+<div class="twolcjsq_t">
+	<ul>
+    	<li class="tzjspg_t xfssb">投资计算</li>
+        <li class="tzjsjz_t">借款计算</li>
+    </ul>
+</div>
+<!--two选择开始-->
+<div class="two_bg_t">
+	<div class="two_bg_t_in">
+    	<!--投资计算-->
+        <div class="tzjsq_t">
+        	<p>
+            	<span>投资期限：</span>
+                <input type="text" style="width:34%;height:34px;border:1px solid #ccc;float:left;margin-top:19px;margin-right:15px;">
+                <select style="width:34%;height:36px;border:1px solid #ccc;float:left;margin-top:19px;text-align:center">
+                	<option style="text-align:center">月</option>
+                    <option style="text-align:center">日</option>
+                </select>
+            </p>
+            <p>
+            	<span>投资利率：</span>
+                <input type="text" style="width:34%;height:34px;border:1px solid #ccc;float:left;margin-top:19px;"><em>%</em>
+                <select style="width:34%;height:36px;border:1px solid #ccc;float:left;margin-top:19px;text-align:center">
+                	<option style="text-align:center">年利率</option>
+                    <option style="text-align:center">日利率</option>
+                </select>
+            </p>
+            <p>
+            	<span>投资奖励：</span>
+                <input type="text" style="width:34%;height:34px;border:1px solid #ccc;float:left;margin-top:19px;"><em>%</em>
+            </p>
+            <p>
+            	<span>标的总额：</span>
+                <input type="text" style="width:34%;height:34px;border:1px solid #ccc;float:left;margin-top:19px;" value="选填"><em>元</em>
+            </p>
+            <p>
+            	<span>总的奖励：</span>
+                <input type="text" style="width:34%;height:34px;border:1px solid #ccc;float:left;margin-top:19px;" value="选填"><em>元</em>
+            </p>
+            <p>
+            	<span>投资金额：</span>
+                <input type="text" style="width:34%;height:34px;border:1px solid #ccc;float:left;margin-top:19px;"><em>元</em>
+            </p>
+            <p>
+            	<span>利息费用：</span>
+                <input type="text" style="width:34%;height:34px;border:1px solid #ccc;float:left;margin-top:19px;"><em>%</em>
+            </p>
+            <p>
+            	<span>返还方式：</span>
+                <select style="width:75%;height:36px;border:1px solid #ccc;float:left;margin-top:19px;text-align:center">
+                	<option style="text-align:center">按月分期还款</option>
+                    <option style="text-align:center">每月还息到期还本</option>
+                    <option style="text-align:center">到期还本息</option>
+                </select>
+            </p>
+            <a href="#">开始计算</a>
+        </div>
+        <!--借款计算-->
+        <div class="jkjsq_t">
+        	<p>
+            	<span>借款期限：</span>
+                <input type="text" style="width:34%;height:34px;border:1px solid #ccc;float:left;margin-top:19px;margin-right:15px;">
+                <select style="width:34%;height:36px;border:1px solid #ccc;float:left;margin-top:19px;text-align:center">
+                	<option style="text-align:center">月</option>
+                    <option style="text-align:center">日</option>
+                </select>
+            </p>
+            <p>
+            	<span>借款利率：</span>
+                <input type="text" style="width:34%;height:34px;border:1px solid #ccc;float:left;margin-top:19px;"><em>%</em>
+                <select style="width:34%;height:36px;border:1px solid #ccc;float:left;margin-top:19px;text-align:center">
+                	<option style="text-align:center">年利率</option>
+                    <option style="text-align:center">日利率</option>
+                </select>
+            </p>
+            <p>
+            	<span>借款奖励：</span>
+                <input type="text" style="width:34%;height:34px;border:1px solid #ccc;float:left;margin-top:19px;"><em>%</em>
+            </p>
+            <p>
+            	<span>标的总额：</span>
+                <input type="text" style="width:34%;height:34px;border:1px solid #ccc;float:left;margin-top:19px;" value="选填"><em>元</em>
+            </p>
+            <p>
+            	<span>总的奖励：</span>
+                <input type="text" style="width:34%;height:34px;border:1px solid #ccc;float:left;margin-top:19px;" value="选填"><em>元</em>
+            </p>
+            <p>
+            	<span>借款金额：</span>
+                <input type="text" style="width:34%;height:34px;border:1px solid #ccc;float:left;margin-top:19px;"><em>元</em>
+            </p>
+            <p>
+            	<span>借款小计：</span>
+                <input type="text" style="width:34%;height:34px;border:1px solid #ccc;float:left;margin-top:19px;"><em>%</em>
+            </p>
+            <p>
+            	<span>返还方式：</span>
+                <select style="width:75%;height:36px;border:1px solid #ccc;float:left;margin-top:19px;text-align:center">
+                	<option style="text-align:center">按月分期还款</option>
+                    <option style="text-align:center">每月还息到期还本</option>
+                    <option style="text-align:center">到期还本息</option>
+                </select>
+            </p>
+            <a href="#">开始计算</a>
+        </div>	
+    </div>
+</div>
+<!--弹出的-->
+<div class="tancud_t">
+	<!--投资计算器-->
+    <div class="tancud_t_1">
+    	<p><span>综合年利率：</span><em>28.2%</em></p>
+        <p><span>综合月利率：</span><em>2.35%</em></p>
+        <p><span>综合天利率：</span><em>0.08%</em></p>
+        <p><span>共借款金额：</span><em>9950元</em></p>
+        <p><span>共需还本息：</span><em>10183.33元</em></p>
+        <p><span>付出利益：</span><em>233.33元</em></p>
+        <p><span>借款管理费：</span><em>50元</em></p>
+        <p><span>风险准备金：</span><em>0元</em></p>
+        <p><span>奖励：</span><em>50元</em></p>
+        <p><span>利息：</span><em>0元</em></p>
+        <div class="tuichu_t">返回</div>
+    </div>
+    <!--借款计算器-->
+    <div class="tancud_t_2">
+    	<p><span>综合年利率：</span><em>28.2%</em></p>
+        <p><span>综合月利率：</span><em>2.35%</em></p>
+        <p><span>综合天利率：</span><em>0.08%</em></p>
+        <p><span>共投资金额：</span><em>9950元</em></p>
+        <p><span>共返还本息：</span><em>10183.33元</em></p>
+        <p><span>获得利益：</span><em>233.33元</em></p>
+        <p><span>奖励：</span><em>50元</em></p>
+        <p><span>利息：</span><em>0元</em></p>
+        <div class="tuichu_t">返回</div>
+    </div>
+</div>
+<script>
+$(".twolcjsq_t ul li").click(function(){
+	$(this).addClass("xfssb").siblings().removeClass("xfssb");
+	})
+$(".tzjsjz_t").click(function(){
+	$(".jkjsq_t").css({display:"block"}).siblings().css({display:"none"})
+	});	
+$(".tzjspg_t").click(function(){
+	$(".tzjsq_t").css({display:"block"}).siblings().css({display:"none"})
+	});
+$(".tzjsq_t a").click(function(){
+	$(".tancud_t").css({display:"block"});
+	$(".tancud_t_2").css({display:"block"}).siblings().css({display:"none"});
+	});
+$(".jkjsq_t a").click(function(){
+	$(".tancud_t").css({display:"block"});
+	$(".tancud_t_1").css({display:"block"}).siblings().css({display:"none"});
+	});
+$(".tuichu_t").click(function(){
+	$(".tancud_t,.tancud_t_1,.tancud_t_2").css({display:"none"})
+	})				
+</script>
+</body>
+</html>
+
+    
+             
+       
+

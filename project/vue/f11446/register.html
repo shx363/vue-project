@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>信富平台</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<link href="css/home.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/css.css" rel="stylesheet" type="text/css" media="all" />
+
+</head>
+
+<body style="background:#fff;">
+
+<!--top-->
+
+<div class="top">
+	<div class="box">
+        <a href="index.html" class="return"><img src="images/return.png"></a>
+        注册    
+    </div>
+</div>
+
+
+<div class="login_lo" style="margin-top:56px;">
+	<div class="box">
+    	<div class="lo_1 lo_2">
+        	<span>手机号</span>
+            <input type="text" name="address" size="60" maxlength="60" style="color:#ccc" value="请输入手机号" onfocus="if(this.value=='请输入手机号'){this.value=''};this.style.color='black';" onblur="if(this.value==''||this.value=='请输入手机号'){this.value='请输入手机号';this.style.color='#ccc';}">
+        </div>
+        <div class="lo_1 lo_2">
+        	<span>验证码</span>
+            <input type="text" name="address" size="60" maxlength="60" style="color:#ccc" value="请输入验证码" onfocus="if(this.value=='请输入验证码'){this.value=''};this.style.color='black';" onblur="if(this.value==''||this.value=='请输入验证码'){this.value='请输入验证码';this.style.color='#ccc';}">
+            <div class="yan">
+                    <input type="button" id="btn" class="btn_mfyzm" value="获取验证码" />
+<script type="text/javascript">
+var wait=60;
+document.getElementById("btn").disabled = false;   
+function time(o) {
+		if (wait == 0) {
+			o.removeAttribute("disabled");           
+			o.value="获取验证码";
+			wait = 60;
+		} else {
+			o.setAttribute("disabled", true);
+			o.value="重新发送(" + wait + ")";
+			wait--;
+			setTimeout(function() {
+				time(o)
+			},
+			1000)
+		}
+	}
+document.getElementById("btn").onclick=function(){time(this);}
+</script> 
+              </div>            
+    </div>
+    	<div class="lo_1 lo_2">
+        	<span>邀请码</span>
+            <input type="text" name="address" size="60" maxlength="60" style="color:#ccc" value="选填" onfocus="if(this.value=='选填'){this.value=''};this.style.color='black';" onblur="if(this.value==''||this.value=='选填'){this.value='选填';this.style.color='#ccc';}">
+        </div>
+        <div class="lo_1 lo_2">
+        	<span>密码</span>
+            <input type="text" name="address" size="60" maxlength="60" style="color:#ccc" value="请输入密码" onfocus="if(this.value=='请输入密码'){this.value=''};this.style.color='black';" onblur="if(this.value==''||this.value=='请输入密码'){this.value='请输入密码';this.style.color='#ccc';}">
+        </div>
+        <div class="lo_1 lo_2">
+        	<span>确认密码</span>
+            <input type="text" name="address" size="60" maxlength="60" style="color:#ccc" value="请再一次输入密码" onfocus="if(this.value=='请再一次输入密码'){this.value=''};this.style.color='black';" onblur="if(this.value==''||this.value=='请再一次输入密码'){this.value='请再一次输入密码';this.style.color='#ccc';}">
+        </div>
+        <div class="lo_1 lo_2">
+        	<span>客服人员</span>
+            <select style="margin-top:10px; width:100px;">
+            	<option>请选择客服</option>
+            	<option>客服人员一</option>
+                <option>客服人员二</option>
+                <option>客服人员三</option>
+            </select>
+        </div>
+        <a href="#" class="lo_login">注册</a>
+    </div>
+</div>
+
+
+</body>
+</html>
+        
